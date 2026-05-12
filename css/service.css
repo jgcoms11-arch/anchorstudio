@@ -1,0 +1,72 @@
+/* ── Service Pages ── */
+.nav.scrolled{background:rgba(6,11,22,0.97) !important;}
+
+.svc-hero{
+  padding:140px 0 80px;text-align:center;
+  background:transparent;position:relative;
+}
+.svc-back{
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:32px;
+  font-family:var(--hd);font-size:13px;font-weight:600;
+  color:var(--g400);text-decoration:none;transition:var(--ease);
+}
+.svc-back:hover{color:var(--blue);}
+.svc-hero-icon{
+  width:80px;height:80px;border-radius:22px;
+  background:linear-gradient(135deg,rgba(79,142,255,0.3),rgba(79,142,255,0.08));
+  border:1px solid rgba(79,142,255,0.35);
+  display:flex;align-items:center;justify-content:center;
+  font-size:34px;color:var(--blue);
+  margin:0 auto 28px;
+  box-shadow:0 0 32px rgba(79,142,255,0.15);
+}
+.svc-hero h1{
+  font-family:var(--hd);font-size:clamp(36px,6vw,64px);
+  font-weight:800;color:white;letter-spacing:-2px;
+  margin-bottom:20px;line-height:1.05;
+}
+.svc-hero p{
+  font-size:18px;color:var(--g400);max-width:560px;
+  margin:0 auto 36px;line-height:1.75;
+}
+
+.svc-body-section{padding:120px 0 80px;background:transparent;}
+.svc-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+.svc-h2{
+  font-family:var(--hd);font-size:clamp(24px,3.5vw,38px);
+  font-weight:800;color:white;letter-spacing:-1px;
+  margin:18px 0 28px;line-height:1.1;
+}
+.svc-includes{display:flex;flex-direction:column;gap:14px;}
+.svc-include{
+  display:flex;align-items:flex-start;gap:12px;
+  font-size:15px;color:rgba(255,255,255,0.82);line-height:1.5;
+}
+.svc-include i{color:var(--blue);font-size:14px;margin-top:3px;flex-shrink:0;}
+
+.svc-aside{display:flex;flex-direction:column;gap:16px;}
+.svc-aside-card{
+  background:rgba(10,18,42,0.8);backdrop-filter:blur(16px);
+  border:1px solid rgba(79,142,255,0.15);border-radius:var(--r);
+  padding:24px;
+}
+.svc-aside-card h3{
+  font-family:var(--hd);font-size:13px;font-weight:700;
+  color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;
+}
+.svc-aside-card p{font-size:14px;color:var(--g400);line-height:1.7;}
+.svc-aside-card strong{color:white;}
+
+.svc-cta-strip{
+  padding:80px 0;background:transparent;text-align:center;
+}
+.svc-cta-strip h2{
+  font-family:var(--hd);font-size:clamp(24px,4vw,42px);
+  font-weight:800;color:white;letter-spacing:-1.5px;margin-bottom:14px;
+}
+.svc-cta-strip p{font-size:16px;color:var(--g400);margin-bottom:32px;}
+
+@media(max-width:768px){
+  .svc-grid-2{grid-template-columns:1fr;}
+  .svc-hero{padding:120px 0 60px;}
+}
