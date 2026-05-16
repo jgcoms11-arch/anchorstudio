@@ -187,61 +187,6 @@
     }
   }
 
-  /* ── Black hole effect at cursor ─────────────── */
-  function drawBlackHole() {
-    /* Only show once mouse has entered the section */
-    if (mouse.x < 0) return;
-
-    const bx = mouse.x;
-    const by = mouse.y;
-    const bhr = CONFIG.bhRadius;
-
-    /* Gravity lines — particles near cursor → black hole */
-    particles.forEach(p => {
-      const d = Math.hypot(bx - p.x, by - p.y);
-      if (d >= bhr || d < 2) return;
-
-      const proximity = 1 - d / bhr;
-      const alpha     = proximity * proximity * 0.55; /* quadratic fade */
-
-      ctx.beginPath();
-      ctx.moveTo(p.x, p.y);
-      ctx.lineTo(bx, by);
-      ctx.strokeStyle = `rgba(100,170,255,${alpha})`;
-      ctx.lineWidth   = proximity * 0.9 + 0.2;
-      ctx.stroke();
-    });
-
-    /* Outer glow ring — accretion disk */
-    const ag = ctx.createRadialGradient(bx, by, 16, bx, by, 90);
-    ag.addColorStop(0,    'rgba(79,142,255,0.22)');
-    ag.addColorStop(0.35, 'rgba(60,100,255,0.08)');
-    ag.addColorStop(1,    'rgba(0,0,0,0)');
-    ctx.fillStyle = ag;
-    ctx.beginPath();
-    ctx.arc(bx, by, 90, 0, Math.PI * 2);
-    ctx.fill();
-
-    /* Event horizon ring */
-    ctx.beginPath();
-    ctx.arc(bx, by, 14, 0, Math.PI * 2);
-    ctx.strokeStyle = 'rgba(120,180,255,0.65)';
-    ctx.lineWidth   = 1.2;
-    ctx.shadowColor = 'rgba(79,142,255,0.9)';
-    ctx.shadowBlur  = 18;
-    ctx.stroke();
-    ctx.shadowBlur  = 0;
-
-    /* Dark void center */
-    const dg = ctx.createRadialGradient(bx, by, 0, bx, by, 14);
-    dg.addColorStop(0,   'rgba(0,0,0,0.95)');
-    dg.addColorStop(0.7, 'rgba(2,5,15,0.80)');
-    dg.addColorStop(1,   'rgba(0,0,0,0)');
-    ctx.fillStyle = dg;
-    ctx.beginPath();
-    ctx.arc(bx, by, 14, 0, Math.PI * 2);
-    ctx.fill();
-  }
 
   /* ── Main loop ───────────────────────────────── */
   function loop() {
@@ -266,7 +211,6 @@
 
     drawNebula();
     drawStarLines();
-    drawBlackHole();    /* drawn before stars so stars render on top */
     particles.forEach(p => { p.update(); p.draw(); });
 
     rafId = requestAnimationFrame(loop);
