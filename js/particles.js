@@ -236,12 +236,6 @@
     mouse.x = -1000;
     mouse.y = -1000;
   });
-  section.addEventListener('touchmove', e => {
-    e.preventDefault();
-    const r = canvas.getBoundingClientRect();
-    mouse.x = e.touches[0].clientX - r.left;
-    mouse.y = e.touches[0].clientY - r.top;
-  }, { passive: false });
 
   /* ── Reduced motion ──────────────────────────── */
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
