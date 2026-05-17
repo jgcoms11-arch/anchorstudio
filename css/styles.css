@@ -19,8 +19,8 @@
   --r:      14px;
   --r2:     22px;
 }
-html{scroll-behavior:smooth;background:var(--bg);}
-body{font-family:var(--bd);color:var(--g600);background:transparent;overflow-x:hidden;line-height:1.65;}
+html{scroll-behavior:smooth;background:var(--bg);overflow-x:hidden;}
+body{font-family:var(--bd);color:var(--g600);background:transparent;line-height:1.65;}
 
 /* Utility */
 .container{max-width:1160px;margin:0 auto;padding:0 28px;position:relative;z-index:1;}
