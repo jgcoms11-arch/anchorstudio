@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Request your free homepage preview from AnchorPoint Studio. Fill out a quick form and we'll have a preview ready within 1 hour."/>
-  <title>Get Your Free Homepage Preview | AnchorPoint Studio</title>
+  <meta name="description" content="Request your free homepage preview from BuiltWeb Studio. Fill out a quick form and we'll have a preview ready within 1 hour."/>
+  <title>Get Your Free Homepage Preview | BuiltWeb Studio</title>
   <meta name="robots" content="noindex"/>
   <link rel="stylesheet" href="css/styles.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -55,7 +55,11 @@
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">
-      <img src="images/img1.png" alt="AnchorPoint Studio" class="nav-logo-img"/>
+      <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="orbp" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06D6F5"/><stop offset="50%" stop-color="#4F8EFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient><filter id="gp" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="dp" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><circle cx="50" cy="50" r="43" stroke="url(#orbp)" stroke-width="2.5" filter="url(#gp)"/><ellipse cx="50" cy="50" rx="43" ry="16" stroke="url(#orbp)" stroke-width="2" transform="rotate(-35 50 50)" filter="url(#gp)"/><path d="M50 7 Q18 28 50 50 Q82 72 50 93" stroke="url(#orbp)" stroke-width="2" filter="url(#gp)"/><circle cx="22" cy="37" r="5" fill="#06D6F5" filter="url(#dp)"/><circle cx="22" cy="37" r="3" fill="white" opacity="0.9"/><circle cx="46" cy="52" r="4" fill="#4F8EFF" filter="url(#dp)"/><circle cx="46" cy="52" r="2.2" fill="white" opacity="0.8"/><circle cx="78" cy="63" r="4" fill="#8B5CF6" filter="url(#dp)"/><circle cx="78" cy="63" r="2.2" fill="white" opacity="0.8"/><circle cx="74" cy="21" r="2.5" fill="white" filter="url(#dp)"/><line x1="74" y1="14" x2="74" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/><line x1="67" y1="21" x2="81" y2="21" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/></svg>
+      <div class="logo-wordmark">
+        <span class="logo-name"><span class="lo-anchor">Built</span><span class="lo-point">Web</span></span>
+        <span class="logo-sub">— Studio —</span>
+      </div>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">← Back to Home</a></li>
@@ -85,8 +89,8 @@
         <div class="preview-form-card">
           <form action="https://api.web3forms.com/submit" method="POST" id="previewForm">
             <input type="hidden" name="access_key" value="6023a768-f9f7-4e0b-85c5-5df81601064f"/>
-            <input type="hidden" name="subject" value="New Preview Request — AnchorPoint Studio"/>
-            <input type="hidden" name="from_name" value="AnchorPoint Studio Website"/>
+            <input type="hidden" name="subject" value="New Preview Request — BuiltWeb Studio"/>
+            <input type="hidden" name="from_name" value="BuiltWeb Studio Website"/>
 
             <div class="form-group">
               <label>Your Name *</label>
@@ -132,7 +136,7 @@
             <div class="form-group">
               <label>Logo Link (Optional)</label>
               <input type="text" name="Logo Link" placeholder="Google Drive, Dropbox, or any shareable link — or leave blank"/>
-              <span class="form-note">You can also email the logo to hello@anchorpointstudio.com after submitting.</span>
+              <span class="form-note">You can also email the logo to hello@builtwebstudio.com after submitting.</span>
             </div>
             <div class="form-group">
               <label>Theme / Style Preference *</label>
@@ -204,20 +208,23 @@
       } else {
         btn.innerHTML = original;
         btn.disabled = false;
-        alert('Something went wrong. Please email hello@anchorpointstudio.com directly.');
+        alert('Something went wrong. Please email hello@builtwebstudio.com directly.');
       }
     } catch {
       btn.innerHTML = original;
       btn.disabled = false;
-      alert('Something went wrong. Please email hello@anchorpointstudio.com directly.');
+      alert('Something went wrong. Please email hello@builtwebstudio.com directly.');
     }
   });
 </script>
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
-      <div class="footer-brand"><img src="images/img1.png" alt="AnchorPoint Studio" class="footer-logo-img"/></div>
-      <div class="footer-copy">© 2025 AnchorPoint Studio &nbsp;·&nbsp; <a href="index.html" style="color:inherit;">Back to home</a></div>
+      <div class="footer-brand" style="display:flex;align-items:center;gap:10px;">
+        <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="orbft" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06D6F5"/><stop offset="50%" stop-color="#4F8EFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient><filter id="gft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><circle cx="50" cy="50" r="43" stroke="url(#orbft)" stroke-width="2.5" filter="url(#gft)"/><ellipse cx="50" cy="50" rx="43" ry="16" stroke="url(#orbft)" stroke-width="2" transform="rotate(-35 50 50)" filter="url(#gft)"/><path d="M50 7 Q18 28 50 50 Q82 72 50 93" stroke="url(#orbft)" stroke-width="2" filter="url(#gft)"/><circle cx="22" cy="37" r="5" fill="#06D6F5" filter="url(#gft)"/><circle cx="22" cy="37" r="3" fill="white" opacity="0.9"/><circle cx="74" cy="21" r="2.5" fill="white" filter="url(#gft)"/><line x1="74" y1="14" x2="74" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/><line x1="67" y1="21" x2="81" y2="21" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/></svg>
+        <div class="logo-wordmark"><span class="logo-name"><span class="lo-anchor">Built</span><span class="lo-point">Web</span></span><span class="logo-sub">— Studio —</span></div>
+      </div>
+      <div class="footer-copy">© 2025 BuiltWeb Studio &nbsp;·&nbsp; <a href="index.html" style="color:inherit;">Back to home</a></div>
     </div>
   </div>
 </footer>

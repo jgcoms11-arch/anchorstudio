@@ -41,11 +41,16 @@ body{font-family:var(--bd);color:var(--g600);background:transparent;overflow-x:h
 .btn-blue:hover{background:#3a7aff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(79,142,255,0.35);}
 
 /* NAVBAR */
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .3s,box-shadow .3s;}
-.nav.scrolled{background:rgba(6,11,22,0.96);backdrop-filter:blur(20px);box-shadow:0 1px 0 rgba(255,255,255,0.05);}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .3s,box-shadow .3s;background:rgba(6,11,22,0.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.06);}
+.nav.scrolled{background:rgba(6,11,22,0.97);backdrop-filter:blur(20px);box-shadow:0 1px 0 rgba(255,255,255,0.08);}
 .nav-inner{max-width:1160px;margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;gap:36px;}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;}
-.nav-logo-img{height:44px;width:auto;}
+.logo-svg{width:40px;height:40px;flex-shrink:0;}
+.logo-wordmark{display:flex;flex-direction:column;line-height:1.2;}
+.logo-name{font-family:var(--hd);font-size:16px;font-weight:800;letter-spacing:-0.3px;}
+.lo-anchor{color:white;}
+.lo-point{color:#4F8EFF;}
+.logo-sub{font-family:var(--hd);font-size:9px;font-weight:600;color:rgba(255,255,255,0.35);letter-spacing:2.5px;text-transform:uppercase;}
 .nav-links{display:flex;align-items:center;gap:2px;list-style:none;margin-left:auto;}
 .nav-links a{font-family:var(--hd);font-size:13px;font-weight:600;color:rgba(255,255,255,0.65);text-decoration:none;padding:8px 13px;border-radius:8px;transition:var(--ease);}
 .nav-links a:hover{color:white;background:rgba(255,255,255,0.06);}

@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="AnchorPoint Studio builds clean, professional websites for small businesses that want more calls, quote requests, and bookings. Get a free homepage preview."/>
-  <title>Small Business Web Design | Websites That Get More Quote Requests | AnchorPoint Studio</title>
-  <meta property="og:title" content="Small Business Web Design | AnchorPoint Studio"/>
+  <meta name="description" content="BuiltWeb Studio builds clean, professional websites for small businesses that want more calls, quote requests, and bookings. Get a free homepage preview."/>
+  <title>Small Business Web Design | Websites That Get More Quote Requests | BuiltWeb Studio</title>
+  <meta property="og:title" content="Small Business Web Design | BuiltWeb Studio"/>
   <meta property="og:description" content="Clean, professional websites built for contractors, landscapers, auto shops, and local service businesses. Get a free homepage preview."/>
   <meta name="robots" content="index, follow"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://anchorpointstudio.com/"/>
+  <meta property="og:url" content="https://builtwebstudio.com/"/>
   <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="Small Business Web Design | AnchorPoint Studio"/>
+  <meta name="twitter:title" content="Small Business Web Design | BuiltWeb Studio"/>
   <meta name="twitter:description" content="Clean, professional websites for local businesses. Free homepage preview before you pay anything."/>
-  <link rel="canonical" href="https://anchorpointstudio.com/"/>
+  <link rel="canonical" href="https://builtwebstudio.com/"/>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "AnchorPoint Studio",
+    "name": "BuiltWeb Studio",
     "description": "Web design for small businesses and local service companies. Custom websites built to generate calls, quote requests, and bookings.",
-    "url": "https://anchorpointstudio.com",
-    "email": "hello@anchorpointstudio.com",
+    "url": "https://builtwebstudio.com",
+    "email": "hello@builtwebstudio.com",
     "areaServed": {"@type": "Country", "name": "United States"},
     "serviceType": ["Web Design", "Website Development", "Local SEO", "Website Maintenance"],
     "priceRange": "$500–$800+",
@@ -39,14 +39,55 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="logo">
-      <img src="images/img1.png" alt="AnchorPoint Studio" class="nav-logo-img"/>
+      <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#06D6F5"/>
+            <stop offset="50%" stop-color="#4F8EFF"/>
+            <stop offset="100%" stop-color="#8B5CF6"/>
+          </linearGradient>
+          <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="2.5" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="dotglow" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur stdDeviation="3" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <!-- Outer circle -->
+        <circle cx="50" cy="50" r="43" stroke="url(#orb)" stroke-width="2.5" filter="url(#glow)"/>
+        <!-- Tilted orbital ellipse -->
+        <ellipse cx="50" cy="50" rx="43" ry="16" stroke="url(#orb)" stroke-width="2" transform="rotate(-35 50 50)" filter="url(#glow)"/>
+        <!-- S-curve meridian -->
+        <path d="M50 7 Q18 28 50 50 Q82 72 50 93" stroke="url(#orb)" stroke-width="2" filter="url(#glow)"/>
+        <!-- Dot 1 — cyan top left -->
+        <circle cx="22" cy="37" r="5" fill="#06D6F5" filter="url(#dotglow)"/>
+        <circle cx="22" cy="37" r="3" fill="white" opacity="0.9"/>
+        <!-- Dot 2 — mid blue -->
+        <circle cx="46" cy="52" r="4" fill="#4F8EFF" filter="url(#dotglow)"/>
+        <circle cx="46" cy="52" r="2.2" fill="white" opacity="0.8"/>
+        <!-- Dot 3 — purple bottom right -->
+        <circle cx="78" cy="63" r="4" fill="#8B5CF6" filter="url(#dotglow)"/>
+        <circle cx="78" cy="63" r="2.2" fill="white" opacity="0.8"/>
+        <!-- Sparkle star top right -->
+        <circle cx="74" cy="21" r="2.5" fill="white" filter="url(#dotglow)"/>
+        <line x1="74" y1="14" x2="74" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/>
+        <line x1="67" y1="21" x2="81" y2="21" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/>
+        <line x1="69" y1="16" x2="79" y2="26" stroke="white" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/>
+        <line x1="79" y1="16" x2="69" y2="26" stroke="white" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/>
+      </svg>
+      <div class="logo-wordmark">
+        <span class="logo-name"><span class="lo-anchor">Built</span><span class="lo-point">Web</span></span>
+        <span class="logo-sub">— Studio —</span>
+      </div>
     </a>
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#proof">Examples</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="examples.html">Examples</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
       <li class="nav-cta"><a href="preview-request.html">Get Free Preview</a></li>
     </ul>
   </div>
@@ -64,7 +105,7 @@
         <p class="hero-p">Clean, professional websites built to show your services, photos, reviews, and make it easier for customers to reach out.</p>
         <div class="hero-ctas">
           <a href="preview-request.html" class="btn btn-gold">Get a Free Homepage Preview <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i></a>
-          <a href="#proof" class="btn btn-ghost">See Website Examples</a>
+          <a href="examples.html" class="btn btn-ghost">See Website Examples</a>
         </div>
         <div class="hero-trust">
           <div class="tp"><div class="tp-dot">✓</div> No upfront payment to see the preview</div>
@@ -171,287 +212,47 @@
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section" id="services">
-  <div class="container">
-    <div class="section-header anim anim-up">
-      <span class="tag">Services &amp; Pricing</span>
-      <h2 class="section-h2">Simple options.<br>No confusing packages.</h2>
-      <p class="section-sub">Pick what fits your business. Every site starts with a free homepage preview — no upfront payment.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card anim anim-up" style="transition-delay:0s">
-        <div class="svc-ico"><i class="fa-solid fa-laptop-code"></i></div>
-        <div class="svc-body">
-          <h3>Basic Website</h3>
-          <div class="svc-price">$500</div>
-          <p>A clean, professional website that shows your services and gets customers to reach out. Mobile-friendly, SEO-ready, delivered fast.</p>
-        </div>
-      </div>
-      <div class="svc-card anim anim-up" style="transition-delay:0.1s">
-        <div class="svc-ico"><i class="fa-solid fa-gem"></i></div>
-        <div class="svc-body">
-          <h3>Premium Website</h3>
-          <div class="svc-price">$800 <span>and up</span></div>
-          <p>More pages, advanced local SEO, gallery, service area pages, Google Analytics setup, and priority support.</p>
-        </div>
-      </div>
-      <div class="svc-card svc-coming anim anim-up" style="transition-delay:0.2s">
-        <div class="svc-coming-badge">Coming Soon</div>
-        <div class="svc-ico"><i class="fa-solid fa-bullhorn"></i></div>
-        <div class="svc-body">
-          <h3>Running Ads</h3>
-          <p>Social media and Google ad management built for local service businesses. More leads, less guesswork.</p>
-        </div>
-      </div>
-      <div class="svc-card anim anim-up" style="transition-delay:0.3s">
-        <div class="svc-ico"><i class="fa-solid fa-rotate"></i></div>
-        <div class="svc-body">
-          <h3>Basic Monthly Support</h3>
-          <div class="svc-price">$80 <span>/ mo</span></div>
-          <p>Security monitoring, backups, software updates, and 1 content update per month. Cancel anytime.</p>
-        </div>
-      </div>
-      <div class="svc-card anim anim-up" style="transition-delay:0.4s">
-        <div class="svc-ico"><i class="fa-solid fa-shield-halved"></i></div>
-        <div class="svc-body">
-          <h3>Premium Monthly Support</h3>
-          <div class="svc-price">$120 <span>/ mo and up</span></div>
-          <p>Everything in basic plus priority support, unlimited small edits, and monthly performance checks.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
+<!-- PORTFOLIO PREVIEW -->
 <section class="proof-section bg-alt" id="proof">
   <div class="container">
-    <div style="text-align:center;margin-bottom:56px;" class="anim anim-up">
-      <span class="tag-gold tag">Website Examples</span>
-      <h2 style="font-family:var(--hd);font-size:clamp(26px,4vw,42px);font-weight:800;color:white;letter-spacing:-1.5px;">Real sites built for real businesses.</h2>
-      <p style="color:var(--g400);font-size:16px;max-width:520px;margin:16px auto 0;line-height:1.75;">Every site below was built to help a real local business get more calls, quote requests, and customer trust.</p>
+    <div style="text-align:center;margin-bottom:48px;" class="anim anim-up">
+      <span class="tag-gold tag">Recent Work</span>
+      <h2 style="font-family:var(--hd);font-size:clamp(24px,4vw,38px);font-weight:800;color:white;letter-spacing:-1.5px;">Real sites built for real businesses.</h2>
+      <p style="color:var(--g400);font-size:15px;max-width:480px;margin:12px auto 0;">Every site below was built to help a local business get more calls and quote requests.</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-
       <div class="work-showcase-card anim anim-left">
         <div class="wsc-preview" style="background:linear-gradient(135deg,#0C0E14 0%,#1A1D23 100%);">
-          <div class="wsc-browser">
-            <div class="wsc-bar"><span class="wsc-dot" style="background:#ff5f57;"></span><span class="wsc-dot" style="background:#febc2e;"></span><span class="wsc-dot" style="background:#28c840;"></span><span class="wsc-url">extremehailandcollision.com</span></div>
-            <div class="wsc-screen" style="background:linear-gradient(160deg,#0C0E14,#1A1D23);">
-              <div style="height:10px;background:rgba(255,255,255,0.07);border-radius:4px;margin-bottom:10px;width:55%;"></div>
-              <div style="height:14px;background:rgba(220,38,38,0.55);border-radius:4px;margin-bottom:6px;width:80%;"></div>
-              <div style="height:5px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:12px;width:65%;"></div>
-              <div style="display:flex;gap:6px;"><div style="height:24px;width:90px;background:rgba(220,38,38,0.6);border-radius:4px;"></div></div>
-            </div>
-          </div>
+          <div class="wsc-browser"><div class="wsc-bar"><span class="wsc-dot" style="background:#ff5f57;"></span><span class="wsc-dot" style="background:#febc2e;"></span><span class="wsc-dot" style="background:#28c840;"></span><span class="wsc-url">extremehailandcollision.com</span></div><div class="wsc-screen" style="background:linear-gradient(160deg,#0C0E14,#1A1D23);"><div style="height:10px;background:rgba(255,255,255,0.07);border-radius:4px;margin-bottom:10px;width:55%;"></div><div style="height:14px;background:rgba(220,38,38,0.55);border-radius:4px;margin-bottom:6px;width:80%;"></div><div style="height:5px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:12px;width:65%;"></div><div style="display:flex;gap:6px;"><div style="height:24px;width:90px;background:rgba(220,38,38,0.6);border-radius:4px;"></div></div></div></div>
         </div>
-        <div class="wsc-body">
-          <span class="work-tag">Auto Body / Hail Repair</span>
-          <h3>Extreme Hail &amp; Collision</h3>
-          <p>Designed to help storm victims find a trusted shop fast — services, before/after photos, insurance help, and an estimate form all in one place.</p>
-        </div>
+        <div class="wsc-body"><span class="work-tag">Auto Body / Hail Repair</span><h3>Extreme Hail &amp; Collision</h3><p>Multi-page site built to help customers find a trusted shop fast — services, photos, insurance help, and an estimate form.</p></div>
       </div>
-
       <div class="work-showcase-card anim anim-right" style="transition-delay:0.1s">
         <div class="wsc-preview" style="background:linear-gradient(135deg,#061007 0%,#0d2a10 100%);">
-          <div class="wsc-browser">
-            <div class="wsc-bar"><span class="wsc-dot" style="background:#ff5f57;"></span><span class="wsc-dot" style="background:#febc2e;"></span><span class="wsc-dot" style="background:#28c840;"></span><span class="wsc-url">awlawn.vercel.app</span></div>
-            <div class="wsc-screen" style="background:linear-gradient(160deg,#060c07,#0d1f0e);">
-              <div style="height:10px;background:rgba(255,255,255,0.07);border-radius:4px;margin-bottom:10px;width:55%;"></div>
-              <div style="height:14px;background:rgba(42,92,63,0.7);border-radius:4px;margin-bottom:6px;width:80%;"></div>
-              <div style="height:5px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:12px;width:65%;"></div>
-              <div style="display:flex;gap:6px;"><div style="height:24px;width:90px;background:rgba(42,92,63,0.65);border-radius:4px;"></div></div>
-            </div>
-          </div>
+          <div class="wsc-browser"><div class="wsc-bar"><span class="wsc-dot" style="background:#ff5f57;"></span><span class="wsc-dot" style="background:#febc2e;"></span><span class="wsc-dot" style="background:#28c840;"></span><span class="wsc-url">awlawn.vercel.app</span></div><div class="wsc-screen" style="background:linear-gradient(160deg,#060c07,#0d1f0e);"><div style="height:10px;background:rgba(255,255,255,0.07);border-radius:4px;margin-bottom:10px;width:55%;"></div><div style="height:14px;background:rgba(42,92,63,0.7);border-radius:4px;margin-bottom:6px;width:80%;"></div><div style="height:5px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:12px;width:65%;"></div><div style="display:flex;gap:6px;"><div style="height:24px;width:90px;background:rgba(42,92,63,0.65);border-radius:4px;"></div></div></div></div>
         </div>
-        <div class="wsc-body">
-          <span class="work-tag">Lawn &amp; Landscaping</span>
-          <h3>A&amp;W Lawn and Landscaping</h3>
-          <p>Built to help homeowners quickly see services, view real project photos, and request a seasonal estimate from any device.</p>
-          <a href="https://awlawn.vercel.app/" target="_blank" rel="noopener" class="wsc-link">View Live Site →</a>
-        </div>
+        <div class="wsc-body"><span class="work-tag">Lawn &amp; Landscaping</span><h3>A&amp;W Lawn and Landscaping</h3><p>Built to help homeowners see services, view real project photos, and request a seasonal estimate from any device.</p><a href="https://awlawn.vercel.app/" target="_blank" rel="noopener" class="wsc-link">View Live Site →</a></div>
       </div>
-
-      <div class="work-showcase-card anim anim-left" style="transition-delay:0.1s">
-        <div class="wsc-preview" style="background:linear-gradient(135deg,#1a0a0a 0%,#3d0f0f 100%);">
-          <div class="wsc-browser">
-            <div class="wsc-bar"><span class="wsc-dot" style="background:#ff5f57;"></span><span class="wsc-dot" style="background:#febc2e;"></span><span class="wsc-dot" style="background:#28c840;"></span><span class="wsc-url">gw-paint-works.netlify.app</span></div>
-            <div class="wsc-screen" style="background:linear-gradient(160deg,#1a0a0a,#2d1010);">
-              <div style="height:10px;background:rgba(255,255,255,0.07);border-radius:4px;margin-bottom:10px;width:55%;"></div>
-              <div style="height:14px;background:rgba(220,38,38,0.5);border-radius:4px;margin-bottom:6px;width:80%;"></div>
-              <div style="height:5px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:12px;width:65%;"></div>
-              <div style="display:flex;gap:6px;"><div style="height:24px;width:90px;background:rgba(220,38,38,0.55);border-radius:4px;"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="wsc-body">
-          <span class="work-tag">Auto Body &amp; Paint</span>
-          <h3>G&amp;W Paint Works</h3>
-          <p>Designed so customers can quickly see what gets repaired, view before/after work, and submit an estimate request with photos.</p>
-          <a href="https://gw-paint-works.netlify.app/" target="_blank" rel="noopener" class="wsc-link">View Live Site →</a>
-        </div>
-      </div>
-
-      <div class="work-showcase-card anim anim-right" style="transition-delay:0.2s">
-        <div class="wsc-preview" style="background:linear-gradient(135deg,#050810 0%,#0a1020 100%);">
-          <div class="wsc-browser">
-            <div class="wsc-bar"><span class="wsc-dot" style="background:#ff5f57;"></span><span class="wsc-dot" style="background:#febc2e;"></span><span class="wsc-dot" style="background:#28c840;"></span><span class="wsc-url">anypercenttints.com</span></div>
-            <div class="wsc-screen" style="background:linear-gradient(160deg,#050810,#0c1525);">
-              <div style="height:10px;background:rgba(255,255,255,0.07);border-radius:4px;margin-bottom:10px;width:55%;"></div>
-              <div style="height:14px;background:rgba(56,189,248,0.45);border-radius:4px;margin-bottom:6px;width:80%;"></div>
-              <div style="height:5px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:12px;width:65%;"></div>
-              <div style="display:flex;gap:6px;"><div style="height:24px;width:90px;background:rgba(56,189,248,0.5);border-radius:4px;"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="wsc-body">
-          <span class="work-tag">Auto Tint &amp; Wraps</span>
-          <h3>Any Percent Tints</h3>
-          <p>Built to showcase tint options, display vehicle work, and make it easy for car owners to book or get a quote.</p>
-        </div>
-      </div>
-
     </div>
     <div style="text-align:center;margin-top:40px;" class="anim anim-up">
-      <a href="preview-request.html" class="btn btn-gold">Get a Free Homepage Preview →</a>
+      <a href="examples.html" class="btn btn-ghost">View All Examples <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i></a>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="section" id="pricing">
-  <div class="container">
-    <div class="section-header anim anim-up">
-      <span class="tag">Pricing</span>
-      <h2 class="section-h2">Simple, transparent pricing.</h2>
-      <p class="section-sub">No confusing packages. You know what you're getting and what it costs before anything starts.</p>
-    </div>
-    <div class="pricing-row">
-      <div class="pricing-main-card anim anim-left">
-        <div class="pmc-top">
-          <div class="pmc-name">Simple Website Setup</div>
-          <div class="pmc-price">Starting at $500 <span>+ $80/mo support</span></div>
-          <p class="pmc-desc">A clean, professional website that shows what you do and makes it easy for customers to reach out. No filler, no bloat — just what works.</p>
-        </div>
-        <ul class="pmc-list">
-          <li><i class="fa-solid fa-check"></i> Custom homepage design</li>
-          <li><i class="fa-solid fa-check"></i> Mobile-friendly layout</li>
-          <li><i class="fa-solid fa-check"></i> Service pages</li>
-          <li><i class="fa-solid fa-check"></i> Contact &amp; quote form</li>
-          <li><i class="fa-solid fa-check"></i> Basic on-page SEO</li>
-          <li><i class="fa-solid fa-check"></i> Google Maps embed</li>
-          <li><i class="fa-solid fa-check"></i> Delivered in days, not weeks</li>
-          <li><i class="fa-solid fa-check"></i> Monthly updates &amp; support ($80/mo)</li>
-        </ul>
-        <div class="pmc-note">No long-term contract. Free preview before you decide. Cancel support anytime.</div>
-        <a href="preview-request.html" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:28px;">Get a Free Homepage Preview</a>
-      </div>
-      <div class="pricing-side anim anim-right">
-        <div class="pside-card">
-          <div class="pside-icon"><i class="fa-solid fa-star"></i></div>
-          <h3>Need something bigger?</h3>
-          <p>Fully custom sites with 6–10 pages, advanced local SEO, schema markup, gallery, service area pages, and 30-day support — starting at $800.</p>
-          <a href="https://form.jotform.com/261291960168159" target="_blank" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:20px;">Talk to Me About It</a>
-        </div>
-        <div class="pside-card" style="margin-top:16px;">
-          <div class="pside-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h3>Monthly Support — $80/mo</h3>
-          <p>Security monitoring, backups, software updates, 1 content update per month, and priority support. Cancel anytime.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="process-section bg-alt" id="process">
-  <div class="container">
-    <div class="process-header anim anim-up">
-      <span class="tag" style="justify-content:center;">How It Works</span>
-      <h2>Simple process. No guesswork.</h2>
-      <p>You stay in the loop at every step — no confusing tech, no surprises.</p>
-    </div>
-    <div class="process-row">
-      <div class="pstep anim anim-up" style="transition-delay:0s"><div class="pstep-num">1</div><h3>I Build You a Free Preview</h3><p>No forms, no commitment. I put together a homepage preview for your business so you can see exactly what it could look like.</p></div>
-      <div class="pstep anim anim-up" style="transition-delay:0.12s"><div class="pstep-num">2</div><h3>If You Like It, Fill Out a Form</h3><p>If the preview looks good, you fill out a short form with your real info — services, photos, hours, and anything else you want included.</p></div>
-      <div class="pstep anim anim-up" style="transition-delay:0.24s"><div class="pstep-num">3</div><h3>I Build the Full Site</h3><p>I take your form answers and build out the complete site — all pages, your real content, mobile-ready, and SEO set up.</p></div>
-      <div class="pstep anim anim-up" style="transition-delay:0.36s"><div class="pstep-num">4</div><h3>You Approve, We Publish</h3><p>You review the finished site. If you're happy with it, we go live. If you want changes, we make them first.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq">
-  <div class="container">
-    <div class="section-header anim anim-up">
-      <span class="tag">FAQ</span>
-      <h2 class="section-h2">Common questions.</h2>
-      <p class="section-sub">If you're wondering about something, chances are someone else did too.</p>
-    </div>
-    <div class="faq-list anim anim-up">
-      <details class="faq-item">
-        <summary class="faq-q">How much does a small business website cost?</summary>
-        <div class="faq-a"><p>A basic website is $500 — that's the full setup price, not a starting point. For businesses that need more pages, advanced SEO, a gallery, or service area pages, the premium package starts at $800. Monthly support is $80/mo and can be cancelled anytime. You'll always know the exact price before anything starts.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Can I see a homepage preview before paying?</summary>
-        <div class="faq-a"><p>Yes — that's exactly how I work. Before you pay anything, I'll build a homepage preview for your business so you can see the layout and direction. If you like it, we'll finish the full site. If not, no charge.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Do you build websites for contractors and local service businesses?</summary>
-        <div class="faq-a"><p>Yes, that's exactly who I build for. I've built sites for auto body shops, landscapers, tint shops, home service companies, cleaning businesses, and more. Local service businesses are my specialty.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Will my website work on mobile?</summary>
-        <div class="faq-a"><p>Every site I build is mobile-first — meaning it's designed for phones first, then scaled up to desktop. Most of your customers will visit from their phones, so this is non-negotiable.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Do you offer monthly website support?</summary>
-        <div class="faq-a"><p>Yes. For $80/month, I handle security monitoring, backups, software updates, and one content update per month. No long-term contract — cancel anytime.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Can you help with SEO?</summary>
-        <div class="faq-a"><p>Basic on-page SEO is included in every site — title tags, meta descriptions, local keywords, image alt text, and schema markup. For businesses that want more advanced local SEO, that's available as an add-on.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Do I need a custom domain?</summary>
-        <div class="faq-a"><p>Your domain and hosting are included in the monthly support plan — no need to figure it out yourself. As long as you're on the $80/mo plan, it's covered. If you ever cancel, I'll help you transfer everything over so you never lose access to your site.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">How long does it take to launch?</summary>
-        <div class="faq-a"><p>Most sites are delivered within 1–7 days of receiving your content (photos, services, business info). The free preview is typically ready within 1 hour of your initial form submission.</p></div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about-strip bg-alt">
-  <div class="container">
-    <div class="about-inner anim anim-up">
-      <div class="about-avatar"><i class="fa-solid fa-user"></i></div>
-      <div class="about-text">
-        <h3>There's a real person behind this.</h3>
-        <p>I started AnchorPoint Studio to help local businesses get websites that actually make sense — clear services, real photos, easy quote forms, and no confusing tech process. I build sites one at a time and stay involved from start to finish.</p>
-        <p class="about-sig">— Founder, AnchorPoint Studio &nbsp;·&nbsp; Based in the St. Louis area</p><!-- REPLACE: add your name -->
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- FINAL CTA -->
 <section class="cta-section" id="cta">
   <div class="container">
     <div class="cta-inner anim anim-scale">
-      <span class="cta-logo">⚓</span>
+      <span class="cta-logo">🌐</span>
       <h2 class="cta-h">Want to see what your business<br>website could look like?</h2>
       <p class="cta-p">I'll create a free homepage preview so you can see the direction before deciding anything. No commitment, no pressure.</p>
       <div class="cta-btns">
         <a href="preview-request.html" class="btn btn-gold" style="padding:16px 36px;font-size:15px;">Get My Free Preview</a>
-        <a href="mailto:hello@anchorpointstudio.com" class="btn btn-ghost" style="padding:16px 36px;font-size:15px;">Send an Email</a>
+        <a href="mailto:hello@builtwebstudio.com" class="btn btn-ghost" style="padding:16px 36px;font-size:15px;">Send an Email</a>
       </div>
-      <p class="cta-note">📧 hello@anchorpointstudio.com &nbsp;·&nbsp; Response within 24 hours &nbsp;·&nbsp; No commitment required</p>
+      <p class="cta-note">📧 hello@builtwebstudio.com &nbsp;·&nbsp; Response within 24 hours &nbsp;·&nbsp; No commitment required</p>
     </div>
   </div>
 </section>
@@ -460,20 +261,28 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
-      <div class="footer-brand"><img src="images/img1.png" alt="AnchorPoint Studio" class="footer-logo-img"/></div>
-      <div class="footer-links-row">
-        <a href="#services">Services</a>
-        <a href="#proof">Examples</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="#cta">Contact</a>
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="orbf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06D6F5"/><stop offset="50%" stop-color="#4F8EFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient><filter id="gf" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="df" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><circle cx="50" cy="50" r="43" stroke="url(#orbf)" stroke-width="2.5" filter="url(#gf)"/><ellipse cx="50" cy="50" rx="43" ry="16" stroke="url(#orbf)" stroke-width="2" transform="rotate(-35 50 50)" filter="url(#gf)"/><path d="M50 7 Q18 28 50 50 Q82 72 50 93" stroke="url(#orbf)" stroke-width="2" filter="url(#gf)"/><circle cx="22" cy="37" r="5" fill="#06D6F5" filter="url(#df)"/><circle cx="22" cy="37" r="3" fill="white" opacity="0.9"/><circle cx="46" cy="52" r="4" fill="#4F8EFF" filter="url(#df)"/><circle cx="46" cy="52" r="2.2" fill="white" opacity="0.8"/><circle cx="78" cy="63" r="4" fill="#8B5CF6" filter="url(#df)"/><circle cx="78" cy="63" r="2.2" fill="white" opacity="0.8"/><circle cx="74" cy="21" r="2.5" fill="white" filter="url(#df)"/><line x1="74" y1="14" x2="74" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/><line x1="67" y1="21" x2="81" y2="21" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/></svg>
+          <div class="logo-wordmark">
+            <span class="logo-name"><span class="lo-anchor">Built</span><span class="lo-point">Web</span></span>
+            <span class="logo-sub">— Studio —</span>
+          </div>
+        </div>
       </div>
-      <div class="footer-copy">© 2025 AnchorPoint Studio &nbsp;·&nbsp; Web design for local businesses &nbsp;·&nbsp; St. Louis area &amp; beyond</div>
+      <div class="footer-links-row">
+        <a href="services.html">Services</a>
+        <a href="examples.html">Examples</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="mailto:hello@builtwebstudio.com">Contact</a>
+      </div>
+      <div class="footer-copy">© 2025 BuiltWeb Studio &nbsp;·&nbsp; Web design for local businesses &nbsp;·&nbsp; St. Louis area &amp; beyond</div>
     </div>
   </div>
 </footer>
 
-<a href="preview-request.html" class="mobile-fab">Get Free Preview ⚓</a>
+<a href="preview-request.html" class="mobile-fab">Get Free Preview 🌐</a>
 <script src="js/main.js"></script>
 <script src="js/particles.js"></script>
 <script>
